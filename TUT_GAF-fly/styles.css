@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+html{
+	font-size: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+}
+
+body{
+	background-image: url("images/01_HR.jpg");
+	background-size: cover;
+	width: 94%;
+	height: 900px;
+}
+
+header{
+	position: absolute;
+	padding: 0.5em 0 2em;
+	z-index: 1000;
+	top: 0;
+  	left: 0;
+	width: 100%;
+	background: #141414;
+}
+
+
+h1{
+	font-family: 'Kosugi Maru', sans-serif;
+	
+}
+
+h2{
+	font-family: 'Kosugi Maru', sans-serif;
+}
+
+.logo{
+	width: 30%;
+	position: absolute;
+    top: 60%;
+    left: 35%;
+}
+.logo_Title{
+	width: 20%;
+	position: absolute;
+    top: 63%;
+    left: 40%;
+}
+
+.item{
+	background-image: url("images/challenge.png");
+	background-size:cover;
+	opacity: 1;
+	color: #fff;
+	padding: 25px;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 50%;
+	
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 280px 280px 280px 280px 280px 280px;
+	gap: 10px;
+	position: relative;
+	left: 5%;
+}
+
+.boxs{
+	font-family: 'Kosugi Maru', sans-serif;
+}
+
+.info_box{
+	width: 19%;
+	position: absolute;
+	top: 20%;
+    left: 78.5%;
+	text-align: center;
+}
+
+.info_box_text{
+	position: absolute;
+    width: 15.5%;
+    height: 18%;
+	top: 23%;
+    left: 80%;
+	text-align: center;
+}
+.info_box_text li{
+	font-size: 10px;
+}
+
+.Twitter_box{
+	width: 16%;
+    height: auto;
+    position: absolute;
+    top: 44%;
+    left: 80%;
+}
+
+footer {
+	position: absolute;
+	top: 96.9%;
+	margin-top: -3em;
+	padding: 0.5em 0 2em;
+	z-index: 1000;
+  	left: 0;
+	width: 100%;
+	height: 2vw;
+	text-align: center;
+	background-color: #141414;
+	color: #fff;
+}
+
