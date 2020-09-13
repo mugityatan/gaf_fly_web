@@ -1,143 +1,410 @@
 @charset "utf-8";
 
 
-
-html{
-	font-size: 100%;
-}
-
-a{
-	text-decoration: none;
-}
-
-img{
-	max-width: 100%;
-}
-
-body{
-	background-image: url("images/01_HR.jpg");
-	background-size: cover;
-	width: 94%;
-	height: 98vh;
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-
-header{
-    position: absolute;
-    padding-right: 0;
-    padding-left: 0;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-	height: 35px;
-    background: #141414;
-}
-
-
-h1{
-	font-family: 'Kosugi Maru', sans-serif;
+@media (max-width:1000px){
+	/*============
+	nav
+	=============*/
+	nav {
+	  display: block;
+	  position: fixed;
+	  top: 0;
+	  left: -200px;
+	  bottom: 0;
+	  width: 200px;
+	  background: #ffffff;
+	  overflow-x: hidden;
+	  overflow-y: auto;
+	  -webkit-overflow-scrolling: touch;
+	  transition: all .5s;
+	  z-index: 3;
+	  opacity: 0;
+	}
+	.open nav {
+	  left: 0;
+	  opacity: 1;
+	}
+	nav .inner {
+	  padding: 25px;
+	}
+	nav .inner ul {
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	}
+	nav .inner ul li {
+	  position: relative;
+	  margin: 0;
+	  border-bottom: 1px solid #333;
+	}
+	nav .inner ul li a {
+	  display: block;
+	  color: #333;
+	  font-size: 14px;
+	  padding: 1em;
+	  text-decoration: none;
+	  transition-duration: 0.2s;
+	}
+	nav .inner ul li a:hover {
+	  background: #e4e4e4;
+	}
 	
-}
-
-h2{
-	font-family: 'Kosugi Maru', sans-serif;
-}
-
-
-
-.logo{
-	position: relative;
-	width: 30vw;
-	top: 29vw;
-    left: 30vw;
-}
-
-
-.container{
-	display: grid;
-	grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw;
-	position: relative;
-	left: 0px;
-}
-
-.item{
-    background-image: url("images/challenge.png");
-    background-size: cover;
-    width: 12vw;
-    height: 3vw;
-    opacity: 1;
-    color: #fff;
-    padding: 1.4vw;
-    text-align: center;
-    font-size: 2vw;
-    position: relative;
-    top: 5vh;
-    left: 13vw;	
-}
-
-
-
-.boxs{
-	font-family: 'Kosugi Maru', sans-serif;
-	position: relative;
-	top: 9vw;
-}
-
-.info_box{
-	width: 23vw;
-	position: absolute;
-    left: 73vw; 
-	text-align: center;
-}
-
-.info_box_text{
-	position: absolute;
-    width: 17vw;
-    height: auto;
-	top: 1vw;
-    left: 76vw;
-	text-align: center;
-}
-.info_box_text h3{
-	font-size: 1.2vw;
-}
-.info_box_text li{
-	font-size: 1vw;
-}
-
-.Twitter_box{
-	width: 20vw;
-    position: absolute;
-    top: 14vw;
-	right: -2vw;
-}
-
-@media (max-width: 500px){
+	/*============
+	.toggle_btn
+	=============*/
+	.toggle_btn {
+	  display: block;
+	  position: fixed;
+	  top: 30px;
+	  left: 30px;
+	  width: 30px;
+	  height: 30px;
+	  transition: all .5s;
+	  cursor: pointer;
+	  z-index: 3;
+	}
+	.open .toggle_btn {
+	  left: 220px;
+	}
+	.toggle_btn span {
+	  display: block;
+	  position: absolute;
+	  left: 0;
+	  width: 30px;
+	  height: 2px;
+	  background-color: #333;
+	  border-radius: 4px;
+	  transition: all .5s;
+	}
+	.toggle_btn span:nth-child(1) {
+	  top: 4px;
+	}
+	.toggle_btn span:nth-child(2) {
+	  top: 14px;
+	}
+	.toggle_btn span:nth-child(3) {
+	  bottom: 4px;
+	}
+	.open .toggle_btn span {
+	  background-color: #fff;
+	}
+	.open .toggle_btn {
+	  -webkit-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+	.open .toggle_btn span:nth-child(1), .open .toggle_btn span:nth-child(3) {
+	  width: 16px;
+	}
+	.open .toggle_btn span:nth-child(1) {
+	  -webkit-transform: translate(-1px,4px) rotate(-45deg);
+	  transform: translate(-1px,4px) rotate(-45deg);
+	}
+	.open .toggle_btn span:nth-child(3) {
+	  -webkit-transform: translate(-1px,-4px) rotate(45deg);
+	  transform: translate(-1px,-4px) rotate(45deg);
+	}
 	
-	body{
+	/*============
+	#mask
+	=============*/
+	#mask {
+	  display: none;
+	  transition: all .5s;
+	}
+	.open #mask {
+	  display: block;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background: #000;
+	  opacity: .8;
+	  z-index: 2;
+	  cursor: pointer;
+	}
+	/*============
+	main
+	=============*/
+	main {
+	  width: 100%;
+	  padding: 50px 0;
+	  transition: all .5s;
+	}
+	.open main {
+	  margin-left: 300px;
+	}
+	
+	/*============
+	body
+	=============*/
+	body {
+		background-color: #FFFFFF;
+		font-family: 'Kosugi Maru', sans-serif;
+		font-weight: 400;
+		overflow: hidden;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	html{
+		font-size: 100%;
+	}
+	a{
+		text-decoration: none;
+	}
+
+	img{
+		max-width: 100%;
+	}
+	
+	header{
+		
+		
+	}
+	h1{
+		position: fixed;
+		width: 100vw;
+		height: 90px;
+		background: #141414;
+		top: -21px;
+		left: 0px;
+		z-index: 2;
+	}
+	h1 p{
+		font: normal normal normal 1vw/0.2vw "Kosugi Maru";
+		font-size: 30px;
+		position: fixed;
+		top: 16px;
+		left: 35vw;
+		color: #fff;
+	}
+
+	h2{
+		font-family: 'Kosugi Maru', sans-serif;
+	}
+	
+	.MobileBG{
+		position: relative;
+		width: 95vw;
+		height: 50vw;
+		background: url("images/01_HR.jpg")0% 0% no-repeat padding-box;
+		background-color: #141414;
+		background-size: cover;
+		background-repeat: no-repeat;
+		border: 1px solid #707070;
+		top: 25vw;
+		left: 2vw;
+	}
+	.logo{
+		position: relative;
+		width: 30vw;
+		top: 5vw;
+		left: 34vw;
+	}
+	.boxs{
+		font-family: 'Kosugi Maru', sans-serif;
+		position: relative;
+		top: -10vw;
+	}
+
+	.info_box{
+		width: 100vw;
+		position: absolute;
+		top: 20vw;
+		left: -1vw; 
+		text-align: center;
+	}
+
+	.info_box_text{
+		position: absolute;
+		width: 100vw;
+		height: auto;
+		top: 24vw;
+		left: -1vw;
+		text-align: center;
+	}
+	.info_box_text h3{
+		font-size: 6vw;
+	}
+	.info_box_text li{
+		font-size: 4vw;
+	}
+
+	.Twitter_box{
+		position: absolute;
+		width: 90vw;
+		top: 85vw;
+		left: 5vw;
+		
+		
+	}
+	
+	footer {
+		position: relative;
+		top: 200vw;
+		left: -0.4vw;
+		
+		z-index: 0;
+		width: 100.5vw;
+		height: 10vw;
 		background-color: #141414;
 		color: #fff;
 	}
+
+	footer p{
+		position: relative;
+		text-align: center;
+		top: 3vw;
+		font: normal normal normal 1vw/3.2vw Kosugi Maru;
+	}
+	
 	
 }
+@media (min-width:1001px){
+	
+	html{
+		font-size: 100%;
+	}
 
-footer {
-	position: relative;
-	bottom: -26.95vw;
-	left: -0.5vw;
-	z-index: 1000px;
-	width: 109%;
-	height: 3.5vw;
-	background-color: #141414;
-	color: #fff;
+	a{
+		text-decoration: none;
+	}
+
+	img{
+		max-width: 100%;
+	}
+
+	body{
+		background-image: url("images/01_HR.jpg");
+		background-color: #141414;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 94%;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	header{
+		position: absolute;
+		padding-right: 0;
+		padding-left: 0;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 35px;
+		background: #141414;
+	}
+
+
+	h1{
+		font: normal normal normal 1vw/0.2vw Kosugi Maru;
+		font-size: 1vw;
+		position: relative;
+		left: 46.7vw;
+		color: #fff;
+
+	}
+
+	h2{
+		font-family: 'Kosugi Maru', sans-serif;
+	}
+
+
+
+	.logo{
+		position: relative;
+		width: 30vw;
+		top: 28vw;
+		left: 30vw;
+	}
+	.inner{
+		position: absolute;
+		left: 5vw;
+		top: -0.5vw;
+	}
+
+	.inner ul{
+		display: grid;
+		list-style: none;
+		grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+		position: relative;
+		
+	}
+
+	.item{
+		background-image: url("images/challenge.png");
+		background-size: cover;
+		width: 12vw;
+		height: 3vw;
+		opacity: 1;
+		color: #fff;
+		padding: 1.4vw;
+		text-align: center;
+		font-size: 2vw;
+		position: relative;
+		top: 2vw;
+		left: 5vw;	
+	}
+
+
+
+	.boxs{
+		font-family: 'Kosugi Maru', sans-serif;
+		position: relative;
+		top: -10vw;
+	}
+
+	.info_box{
+		width: 23vw;
+		position: absolute;
+		left: 70vw; 
+		text-align: center;
+	}
+
+	.info_box_text{
+		position: absolute;
+		width: 17vw;
+		height: auto;
+		top: 1vw;
+		left: 73vw;
+		text-align: center;
+	}
+	.info_box_text h3{
+		font-size: 1.2vw;
+	}
+	.info_box_text li{
+		font-size: 1vw;
+	}
+
+	.Twitter_box{
+		width: 20vw;
+		position: absolute;
+		top: 13vw;
+		right: 7vw;
+	}
+
+	footer {
+		position: relative;
+		top: 26.7vw;
+		left: -0.5vw;
+		z-index: 1000px;
+		width: 109%;
+		height: 3.5vw;
+		background-color: #141414;
+		color: #fff;
+	}
+
+	footer p{
+		position: relative;
+		text-align: center;
+		top: 0.2vw;
+		left: -3vw;
+		font: normal normal normal 1vw/3.2vw Kosugi Maru;
+	}
+
+
 }
 
-footer p{
-	position: relative;
-	text-align: center;
-	top: 0.2vw;
-	font: normal normal normal 1vw/3.2vw Kosugi Maru;
-}
 

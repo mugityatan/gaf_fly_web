@@ -1,19 +1,6 @@
 @charset "utf-8";
 
-::-webkit-scrollbar{
-  width: 10px;
-}
-::-webkit-scrollbar-track{
-  background: #fff;
-  border: none;
-  border-radius: 10px;
-  box-shadow: inset 0 0 2px #777; 
-}
-::-webkit-scrollbar-thumb{
-  background: #ccc;
-  border-radius: 10px;
-  box-shadow: none;
-}
+
 @media (max-width:700px){
 	/*============
 	nav
@@ -22,9 +9,9 @@
 	  display: block;
 	  position: fixed;
 	  top: 0;
-	  left: -300px;
+	  left: -200px;
 	  bottom: 0;
-	  width: 300px;
+	  width: 200px;
 	  background: #ffffff;
 	  overflow-x: hidden;
 	  overflow-y: auto;
@@ -77,7 +64,7 @@
 	  z-index: 3;
 	}
 	.open .toggle_btn {
-	  left: 330px;
+	  left: 220px;
 	}
 	.toggle_btn span {
 	  display: block;
@@ -152,16 +139,15 @@
 	body
 	=============*/
 	body {
-	  font-family: 'Open Sans', sans-serif;
-	  font-weight: 400;
-	  overflow: hidden;
+		font-family: 'Kosugi Maru', sans-serif;
+		font-weight: 400;
+		overflow: hidden;
+		background: #141414;
 	}
 	
-/*
 	html{
 		font-size: 100%;
 	}
-
 	a{
 		text-decoration: none;
 	}
@@ -170,76 +156,191 @@
 		max-width: 100%;
 	}
 	
-	body{
-		background-color: #141414;
-		color: #fff;
+	header{
+		
 		
 	}
-	header{
-		position: absolute;
-		padding-right: 0;
-		padding-left: 0;
-		z-index: 1000;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 35px;
-		background: #141414;
-	}
-
-
 	h1{
-		font-family: 'Kosugi Maru', sans-serif;
-
+		position: fixed;
+		width: 100vw;
+		height: 90px;
+		background: #141414;
+		top: -21px;
+		left: 0px;
+		z-index: 2;
+	}
+	h1 p{
+		font: normal normal normal 1vw/0.2vw "Kosugi Maru";
+		font-size: 30px;
+		position: fixed;
+		top: 16px;
+		left: 35vw;
+		color: #fff;
 	}
 
 	h2{
 		font-family: 'Kosugi Maru', sans-serif;
 	}
-
-	.container{
-		display: grid;
-		grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw;
-		position: relative;
-		left: 0px;
-	}
 	
-	.item{
-		background-image: url("images/challenge.png");
-		background-size: cover;
-		width: 12vw;
-		height: 3vw;
-		opacity: 1;
-		color: #fff;
-		padding: 1.4vw;
-		text-align: center;
-		font-size: 2vw;
-		position: relative;
-		top: 2vw;
-		left: 5vw;	
-	}
-	
-	.About{
-		position: relative;
-		top: 0vw;
-		left: 0vw;
-		width: -80vw;
-		height: -34.2vw;
+	.box{
+		
+		
 		
 	}
-	
-	.About img{
+	.About{
+		background: #fff 0% 0% no-repeat padding-box;
+		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
+		font-size: 79%;
 		position: relative;
+		width: 100vw;
+		height: 130vw;
+		border: 1px solid #707070;
+		z-index: 1;
 		top: 0vw;
 		left: 0vw;
-		width: 50vw;
+		
+	}
+	.About p{
+		position: relative;
+		top: 30vw;
+		left: 4.5vw;
+	}
+	.About img{
+		position: relative;
+		top: 30vw;
+		left: 2.5vw;
+		width: 90vw;
 		height: auto;
 	
 	}
+	.Character{
+		background: #fff 0% 0% no-repeat padding-box;
+		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
+		font-size: 79%;
+		position: relative;
+		width: 100vw;
+		height: 150vw;
+		border: 1px solid #707070;
+		z-index: 1;
+	}
+	.Character img{
+		position: relative;
+		top: 25vw;
+		left: -2vw;
+	}
+	.Operation{
+		background: #fff 0% 0% no-repeat padding-box;
+		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
+		font-size: 79%;
+		position: relative;
+		width: 100vw;
+		height: 315vw;
+		border: 1px solid #707070;
+		z-index: 1;
+		margin: 0px;
+		padding: 0px;
+	}
+	.Operation img{
+		position: relative;
+		right: 1vw;
+		top: 20vw;
+	}
+	.Operation h2{
+		position: relative;
+		font-size: 8vw;
+		text-align: center;
+		right: 2.5vw;
+		top: 20vw;
+		
+	}
+	
+	.Staff{
+		background: #fff 0% 0% no-repeat padding-box;
+		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
+		font-size: 79%;
+		position: relative;
+		width: 100vw;
+		height: 100vw;
+		border: 1px solid #707070;
+		z-index: 1;
+		margin: 0px;
+		padding: 0px;
+	}
+	.Staff p{
+		position: relative;
+		font: normal normal normal 4vw/7vw "Kosugi Maru";
+		top: 35vw;
+		left: 8vw;
+	}
+	.Gallery{
+		background: #fff 0% 0% no-repeat padding-box;
+		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
+		font-size: 79%;
+		position: relative;
+		width: 100vw;
+		height: 100vw;
+		border: 1px solid #707070;
+		z-index: 1;
+		margin: 0px;
+		padding: 0px;
+	}
+	.Gallery p{
+		position: relative;
+		font: normal normal normal 10vw/7vw "Kosugi Maru";
+		top: 45vw;
+		left: 23vw;
+	}
+	
+	
+	footer {
+		position: relative;
+		height: 30px;
+		bottom: 0vw;
+		left: -0.4vw;
+		z-index: 0;
+		
+		background-color: #141414;
+		color: #fff;
+	}
+
+	footer p{
+		position: relative;
+		text-align: center;
+		top: 3vw;
+		font: normal normal normal 1vw/3.2vw Kosugi Maru;
+	}
+/*
+	html{
+		font-size: 100%;
+	}
+
+	
+	
+	body{
+		background-color: #141414;
+		color: #fff;
+		
+	}
+	
+	
 */
 	
 }
 @media (min-width:701px){
+	::-webkit-scrollbar{
+	  width: 10px;
+	}
+	::-webkit-scrollbar-track{
+	  background: #fff;
+	  border: none;
+	  border-radius: 10px;
+	  box-shadow: inset 0 0 2px #777; 
+	}
+	::-webkit-scrollbar-thumb{
+	  background: #ccc;
+	  border-radius: 10px;
+	  box-shadow: none;
+	}
 	html{
 		font-size: 100%;
 	}
@@ -279,7 +380,11 @@
 
 
 	h1{
-		font-family: 'Kosugi Maru', sans-serif;
+		font: normal normal normal 1vw/0.2vw Kosugi Maru;
+		font-size: 1vw;
+		position: relative;
+		left: 46.7vw;
+		color: #fff;
 
 	}
 
@@ -294,9 +399,10 @@
 	}
 	.inner ul{
 		display: grid;
+		list-style: none;
 		grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw;
 		position: relative;
-		left: 0px;
+		left: 1.5vw;
 	}
 
 	.item{
@@ -369,9 +475,19 @@
 
 	.Operation{
 		position: relative;
-		top: 40%;
-		left: 40%;
-		font: normal normal normal 3vw/3.2vw Kosugi Maru;
+		top: 2vw;
+		left: 15vw;
+		width: 80vw;
+		height: 34.2vw;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	.Operation h2{
+		position: relative;
+		font-size: 50px;
+		text-align: center;
+		right: 10vw;
+		
 	}
 
 	.Staff{
