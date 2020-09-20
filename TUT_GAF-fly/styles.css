@@ -134,15 +134,19 @@
 	.open main {
 	  margin-left: 300px;
 	}
+	main section {
+		margin-left: 1rem;
+		overflow: scroll; /* ここのscrollが効かない */
+		height: 150vh; /* これを追加 */
+	}
 	
 	/*============
 	body
 	=============*/
 	body {
-		background-color: #FFFFFF;
+		background-color: #1E80DB;
 		font-family: 'Kosugi Maru', sans-serif;
 		font-weight: 400;
-		overflow: hidden;
 		margin: 0px;
 		padding: 0px;
 	}
@@ -239,6 +243,20 @@
 		
 		
 	}
+	.Youtube_box{
+		position: relative;
+		width: 100%;
+		top: 200vw;
+		padding-top: 56%;
+		overflow: hidden;
+	}
+	.Youtube_box iframe{
+		position: absolute;
+		top: 0;
+		left: 5%;
+		width: 90% !important;
+		height: 100% !important;
+	}
 	
 	footer {
 		position: relative;
@@ -252,11 +270,13 @@
 		color: #fff;
 	}
 
-	footer p{
+	footer a{
 		position: relative;
 		text-align: center;
 		top: 3vw;
+		left: 15%;
 		font: normal normal normal 1vw/3.2vw Kosugi Maru;
+		color: #fff;
 	}
 	
 	
@@ -325,24 +345,43 @@
 		top: -0.5vw;
 	}
 
+	.inner{
+		position: absolute;
+		left: -3.5vw;
+		top: -0.2vw;
+	}
 	.inner ul{
 		display: grid;
 		list-style: none;
-		grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+		grid-template-columns: 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw;
 		position: relative;
-		
+		left: 1.5vw;
 	}
 
 	.item{
 		background-image: url("images/challenge.png");
 		background-size: cover;
-		width: 12vw;
-		height: 3vw;
+		width: 10vw;
+		height: 2vw;
 		opacity: 1;
 		color: #fff;
 		padding: 1.4vw;
 		text-align: center;
-		font-size: 2vw;
+		font-size: 1.7vw;
+		position: relative;
+		top: 2vw;
+		left: 5vw;	
+	}
+	.item2{
+		background-image: url("images/challenge.png");
+		background-size: cover;
+		width: 10vw;
+		height: 2vw;
+		opacity: 1;
+		color: #fff;
+		padding: 1.4vw;
+		text-align: center;
+		font-size: 1.7vw;
 		position: relative;
 		top: 2vw;
 		left: 5vw;	
@@ -359,7 +398,7 @@
 	.info_box{
 		width: 23vw;
 		position: absolute;
-		left: 70vw; 
+		left: 71vw; 
 		text-align: center;
 	}
 
@@ -368,7 +407,7 @@
 		width: 17vw;
 		height: auto;
 		top: 1vw;
-		left: 73vw;
+		left: 74vw;
 		text-align: center;
 	}
 	.info_box_text h3{
@@ -379,29 +418,44 @@
 	}
 
 	.Twitter_box{
-		width: 20vw;
-		position: absolute;
+		width: 19vw;
+		position: relative;
 		top: 13vw;
-		right: 7vw;
+		right: -73vw;
+	}
+	.Youtube_box{
+		position: relative;
+		width: 25%;
+		top: 3vw;
+		padding-top: 12%;
+		overflow: hidden;
+	}
+	.Youtube_box iframe{
+		position: absolute;
+		top: 0;
+		left: 18%;
+		width: 80% !important;
+		height: 100% !important;
 	}
 
 	footer {
 		position: relative;
-		top: 26.7vw;
-		left: -0.5vw;
-		z-index: 1000px;
-		width: 109%;
+		bottom: 5.5vw;
+		left: -6vw;
+		z-index: 1000;
+		width: 110%;
 		height: 3.5vw;
 		background-color: #141414;
 		color: #fff;
 	}
 
-	footer p{
+	footer a{
 		position: relative;
 		text-align: center;
 		top: 0.2vw;
-		left: -3vw;
+		left: 38%;
 		font: normal normal normal 1vw/3.2vw Kosugi Maru;
+		color: #FFFFFF;
 	}
 
 

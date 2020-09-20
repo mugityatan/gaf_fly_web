@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 
-@media (max-width:700px){
+@media (max-width:480px){
+	
 	/*============
 	nav
 	=============*/
@@ -12,7 +13,7 @@
 	  left: -200px;
 	  bottom: 0;
 	  width: 200px;
-	  background: #ffffff;
+	  background: rgba(255,255,255,0.80);
 	  overflow-x: hidden;
 	  overflow-y: auto;
 	  -webkit-overflow-scrolling: touch;
@@ -135,13 +136,13 @@
 	  margin-left: 300px;
 	}
 	
+	
 	/*============
 	body
 	=============*/
 	body {
 		font-family: 'Kosugi Maru', sans-serif;
 		font-weight: 400;
-		overflow: hidden;
 		background: #141414;
 	}
 	
@@ -158,8 +159,8 @@
 	
 	header{
 		
-		
 	}
+	
 	h1{
 		position: fixed;
 		width: 100vw;
@@ -188,7 +189,7 @@
 		
 	}
 	.About{
-		background: #fff 0% 0% no-repeat padding-box;
+		background: #1E80DB 0% 0% no-repeat padding-box;
 		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
 		font-size: 79%;
 		position: relative;
@@ -214,7 +215,7 @@
 	
 	}
 	.Character{
-		background: #fff 0% 0% no-repeat padding-box;
+		background: #1E80DB 0% 0% no-repeat padding-box;
 		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
 		font-size: 79%;
 		position: relative;
@@ -229,7 +230,7 @@
 		left: -2vw;
 	}
 	.Operation{
-		background: #fff 0% 0% no-repeat padding-box;
+		background: #1E80DB 0% 0% no-repeat padding-box;
 		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
 		font-size: 79%;
 		position: relative;
@@ -255,7 +256,7 @@
 	}
 	
 	.Staff{
-		background: #fff 0% 0% no-repeat padding-box;
+		background: #1E80DB 0% 0% no-repeat padding-box;
 		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
 		font-size: 79%;
 		position: relative;
@@ -273,7 +274,7 @@
 		left: 8vw;
 	}
 	.Gallery{
-		background: #fff 0% 0% no-repeat padding-box;
+		background: #1E80DB 0% 0% no-repeat padding-box;
 		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
 		font-size: 79%;
 		position: relative;
@@ -303,11 +304,13 @@
 		color: #fff;
 	}
 
-	footer p{
+	footer a{
 		position: relative;
 		text-align: center;
 		top: 3vw;
+		left: 15%;
 		font: normal normal normal 1vw/3.2vw Kosugi Maru;
+		color: #fff;
 	}
 /*
 	html{
@@ -326,7 +329,7 @@
 */
 	
 }
-@media (min-width:701px){
+@media (min-width:481px){
 	::-webkit-scrollbar{
 	  width: 10px;
 	}
@@ -395,12 +398,12 @@
 	.inner{
 		position: absolute;
 		left: -3.5vw;
-		top: -0.5vw;
+		top: -0.2vw;
 	}
 	.inner ul{
 		display: grid;
 		list-style: none;
-		grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw;
+		grid-template-columns: 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw;
 		position: relative;
 		left: 1.5vw;
 	}
@@ -408,13 +411,27 @@
 	.item{
 		background-image: url("images/challenge.png");
 		background-size: cover;
-		width: 12vw;
-		height: 3vw;
+		width: 10vw;
+		height: 2vw;
 		opacity: 1;
 		color: #fff;
 		padding: 1.4vw;
 		text-align: center;
-		font-size: 2vw;
+		font-size: 1.7vw;
+		position: relative;
+		top: 2vw;
+		left: 5vw;	
+	}
+	.item2{
+		background-image: url("images/challenge.png");
+		background-size: cover;
+		width: 10vw;
+		height: 2vw;
+		opacity: 1;
+		color: #fff;
+		padding: 1.4vw;
+		text-align: center;
+		font-size: 1.7vw;
 		position: relative;
 		top: 2vw;
 		left: 5vw;	
@@ -482,6 +499,11 @@
 		overflow-x: hidden;
 		overflow-y: scroll;
 	}
+	.Operation img{
+		position: relative;
+		width: 63vw;
+		right: 1vw;
+	}
 	.Operation h2{
 		position: relative;
 		font-size: 50px;
@@ -507,20 +529,22 @@
 
 	footer {
 		position: relative;
-		bottom: -7.45vw;
-		left: -0.4vw;
+		bottom: -8.4vw;
+		left: -6vw;
 		z-index: 1000;
-		width: 100%;
+		width: 110%;
 		height: 3.5vw;
 		background-color: #141414;
 		color: #fff;
 	}
 
-	footer p{
+	footer a{
 		position: relative;
 		text-align: center;
 		top: 0.2vw;
+		left: 38%;
 		font: normal normal normal 1vw/3.2vw Kosugi Maru;
+		color: #FFFFFF;
 	}
 
 
