@@ -291,6 +291,88 @@
 		top: 45vw;
 		left: 23vw;
 	}
+	.Download{
+		background: #1E80DB 0% 0% no-repeat padding-box;
+		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
+		font-size: 79%;
+		position: relative;
+		width: 100vw;
+		height: 150vw;
+		border: 1px solid #707070;
+		z-index: 1;
+		top: 0vw;
+		left: 0vw;
+	}
+	.Download h1{
+		background: #1E80DB 0% 0% no-repeat padding-box;
+		position: relative;
+		font: normal normal normal 10vw/5.2vw "Kosugi Maru";
+		top: 20vw;
+		left: 0px;
+	}
+	.Download h2{
+		position: relative;
+		top: 1vw;
+		z-index: 2;
+	}
+	.Download p{
+		position: relative;
+		z-index: 2;
+	}
+	.Download_text{
+		position: relative;
+		bottom: -4vw;
+		left: 0vw;
+		font: normal normal normal 5vw/2vw Kosugi Maru;
+		color: #030303;
+	}
+	
+	.svg-wrapper {
+		margin-top: 0;
+		position: relative;
+		width: 2vw;
+		/*make sure to use same height/width as in the html*/
+		height: 1vw;
+		bottom: 1vw;
+		left: 3vw;
+		display: inline-block;
+		border-radius: 3px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.spot {
+		position: absolute;
+		width: 0%;
+		height: 0%;
+		top: 0;
+		left: 0;
+	}
+	#shape {
+		stroke-width: 0px;
+		fill: transparent;
+		stroke: #ed1c24;
+		stroke-dasharray: 50 800;
+		stroke-dashoffset: -800;
+		transition: 1s all ease;
+	}
+	#text {
+		margin-top: -15vw;
+		text-align: center;
+	}
+
+	#text a {
+		font-family: 'Kosugi Maru', sans-serif;
+		color: #0E0E0E;
+		text-decoration: none;
+		font-weight: 100;
+		font-size: 2.1em;
+	}
+	.svg-wrapper:hover #shape {
+		stroke-dasharray: 50 0;
+		stroke-width: 3px;
+		stroke-dashoffset: 0;
+		stroke: #b6195d;
+	}
 	
 	
 	footer {
@@ -423,12 +505,12 @@
 		left: 5vw;	
 	}
 	.item2{
-		background-image: url("images/challenge.png");
+		background-image: url("images/challenge_0.png");
 		background-size: cover;
 		width: 10vw;
 		height: 2vw;
 		opacity: 1;
-		color: #fff;
+		color: #676767;
 		padding: 1.4vw;
 		text-align: center;
 		font-size: 1.7vw;
@@ -525,6 +607,82 @@
 		top: 40%;
 		left: 40%;
 		font: normal normal normal 3vw/3.2vw Kosugi Maru;
+	}
+	.Download{
+		width: 100%;
+		height: 98vh;
+		position: relative;
+		top: 2vw;
+		left: 15vw;
+		width: 70vw;
+		height: 34.2vw;
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+	.Download h1{
+		position: relative;
+		left: -6vw;
+		text-align: center;
+		font: normal normal normal 3vw/3.2vw Kosugi Maru;
+		color: #030303;
+	}
+	.Download h2{
+		font: normal normal normal 1.4vw/2vw Kosugi Maru;
+		color: #030303;
+	}
+	.Download_text{
+		position: relative;
+		bottom: 20vw;
+		left: 31.5vw;
+		font: normal normal normal 2vw/2vw Kosugi Maru;
+		color: #030303;
+	}
+	
+	.svg-wrapper {
+		margin-top: 0;
+		position: relative;
+		width: 400px;
+		/*make sure to use same height/width as in the html*/
+		height: 100px;
+		bottom: 15vw;
+		left: 35vw;
+		display: inline-block;
+		border-radius: 3px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.spot {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+	#shape {
+		stroke-width: 20px;
+		fill: transparent;
+		stroke: #ed1c24;
+		stroke-dasharray: 200 800;
+		stroke-dashoffset: -599;
+		transition: 1s all ease;
+	}
+	#text {
+		margin-top: -75px;
+		text-align: center;
+	}
+
+	#text a {
+		font-family: 'Kosugi Maru', sans-serif;
+		color: #0E0E0E;
+		text-decoration: none;
+		font-weight: 100;
+		font-size: 2.1em;
+	}
+	.svg-wrapper:hover #shape {
+		stroke-dasharray: 50 0;
+		stroke-width: 3px;
+		stroke-dashoffset: 0;
+		stroke: #b6195d;
 	}
 
 	footer {
