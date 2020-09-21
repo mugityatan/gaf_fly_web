@@ -583,12 +583,13 @@
 	}
 	.Operation img{
 		position: relative;
-		width: 63vw;
-		right: 1vw;
+		width: 40vw;
+		top: -2vw;
+		left: 10vw;
 	}
 	.Operation h2{
 		position: relative;
-		font-size: 50px;
+		font-size: 40px;
 		text-align: center;
 		right: 10vw;
 		
