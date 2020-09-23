@@ -279,7 +279,7 @@
 		font-size: 79%;
 		position: relative;
 		width: 100vw;
-		height: 100vw;
+		height: 550vw;
 		border: 1px solid #707070;
 		z-index: 1;
 		margin: 0px;
@@ -290,6 +290,13 @@
 		font: normal normal normal 10vw/7vw "Kosugi Maru";
 		top: 45vw;
 		left: 23vw;
+	}
+	.Gallery img{
+		position: relative;
+		top: 28vw;
+		left: 2vw;
+		width: 90vw;
+		
 	}
 	.Download{
 		background: #1E80DB 0% 0% no-repeat padding-box;
@@ -599,13 +606,21 @@
 
 	.Gallery{
 		position: relative;
-		top: 40%;
-		left: 40%;
+		top: 2vw;
+		left: 0vw;
+		width: 87vw;
+		height: 34.2vw;
 		font: normal normal normal 3vw/3.2vw Kosugi Maru;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	.Gallery img{
+		position: relative;
+		top: 0vw;
+		left: 15vw;
+		width: 30vw;
 	}
 	.Download{
-		width: 100%;
-		height: 98vh;
 		position: relative;
 		top: 2vw;
 		left: 0vw;
@@ -614,6 +629,7 @@
 		overflow-x: hidden;
 		overflow-y: scroll;
 	}
+	
 	
 	.Download_text{
 		position: relative;
@@ -651,7 +667,7 @@
 	.spot {
 		position: absolute;
 		width: 100%;
-		height: 100%;
+		height: 250%;
 		top: 0;
 		left: 0;
 	}
@@ -661,8 +677,8 @@
 		height: 5vw;
 		fill: transparent;
 		stroke: #ed1c24;
-		stroke-dasharray: 200 800;
-		stroke-dashoffset: -599;
+		stroke-dasharray: 13vw 80vw;
+		stroke-dashoffset: -30vw;
 		transition: 1s all ease;
 	}
 	#text {
@@ -676,7 +692,7 @@
 		color: #0E0E0E;
 		text-decoration: none;
 		font-weight: 100;
-		font-size: 2.7em;
+		font-size: 2vw;
 	}
 	.svg-wrapper:hover #shape {
 		stroke-dasharray: 50 0;
